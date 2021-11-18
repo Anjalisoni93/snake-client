@@ -5,20 +5,26 @@ const connect = function() {
     host: 'localhost',
     port: 50541,
   });
+  
 
   // Added connect function to make sure its connected to server
   conn.on("connect", () => {
-    console.log('Connected..');
+    console.log("Successfully connected to game server");
+    conn.write('Name: AJS');
   });
+
 
   // Added an event data which gets complete data and displays a message
   conn.on("data", (data) => {
     console.log('Server says..', data);
   });
 
+  
+
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
+  
   return conn;
 };
 
