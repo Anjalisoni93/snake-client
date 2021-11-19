@@ -40,4 +40,5 @@ const handleUserInput = function(key) {
   }
 };
 
+// setInput
 module.exports = {setupInput};
