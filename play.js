@@ -1,3 +1,5 @@
+// connect and setInput
+
 const { connect } = require("./client");
 const { setupInput } = require("./input");
 
