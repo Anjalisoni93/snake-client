@@ -2,6 +2,8 @@ const net = require('net');
 const { IP, PORT } = require('./constants');
 
 const connect = function() {
+
+  // created constants file so that only use objects here
   const conn = net.createConnection({
     host: IP,
     port: PORT,
@@ -13,24 +15,9 @@ const connect = function() {
     console.log("Successfully connected to game server");
     conn.write('Name: AJS');
 
-    /* setTimeout(() => {
-      conn.write('Move: up')
-    }, 50);
-    conn.write('Move: down');
-    conn.write('Move: left');
-    conn.write('Move: right');
-    
-    setInterval(() => {
-      conn.write('Move: up')
-    }, 50);
-
-    setTimeout(() => {
-      conn.write("Move: up")
-    }, 50); */
-
   });
 
-  // Added an event data which gets complete data and displays a message
+  // Event that gets the message from server and displays it
   conn.on("data", (data) => {
     console.log('Server says..', data);
   });
