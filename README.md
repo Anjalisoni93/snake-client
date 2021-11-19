@@ -8,7 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["screenshot of GameBoard"](https://github.com/Anjalisoni93/snake-client/blob/master/home/labber/lighthouse/w5/snake-client/snek.jpg?raw=true)
+!["GameBoard"](/home/labber/lighthouse/w5/snake-client/snek.png)
 
 
 
